@@ -24,9 +24,10 @@ export default function Auth() {
     } else {
       setpasswordError('');
       setpasswordFailCount(0);
-    }
 
-    console.log('Pagó')
+      console.log('Dijo el que era')
+      window.open('https://rankey1496.github.io/mariabirthday/')
+    }
   };
 
   return (
