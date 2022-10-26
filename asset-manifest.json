@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mariaestrada26_/static/css/main.0b628871.css",
-    "main.js": "/mariaestrada26_/static/js/main.5a690e3c.js",
+    "main.js": "/mariaestrada26_/static/js/main.21850302.js",
     "static/js/787.3d664806.chunk.js": "/mariaestrada26_/static/js/787.3d664806.chunk.js",
     "index.html": "/mariaestrada26_/index.html",
     "main.0b628871.css.map": "/mariaestrada26_/static/css/main.0b628871.css.map",
-    "main.5a690e3c.js.map": "/mariaestrada26_/static/js/main.5a690e3c.js.map",
+    "main.21850302.js.map": "/mariaestrada26_/static/js/main.21850302.js.map",
     "787.3d664806.chunk.js.map": "/mariaestrada26_/static/js/787.3d664806.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b628871.css",
-    "static/js/main.5a690e3c.js"
+    "static/js/main.21850302.js"
   ]
 }
