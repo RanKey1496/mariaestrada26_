@@ -1,19 +1,20 @@
 import './auth.css';
 import React, { useState } from 'react';
+import useAnalyticsEventTracker from '../../tools/useAnalyticsEventTracker';
 
 export default function Auth() {
-
+  const gaEventTracker = useAnalyticsEventTracker('Contact us', 'Entró', 1);
   const [password, setPassword] = useState("");
   const [passwordError, setpasswordError] = useState("");
   let [passwordFailCount = 0, setpasswordFailCount] = useState("");
 
   const loginSubmit = (e) => {
     e.preventDefault();
+    gaEventTracker('enviar');
 
-    if (password !== 'baby') {
+    if (password.toLowerCase() !== 'baby') {
       setpasswordFailCount(passwordFailCount++);
-
-      console.log(passwordFailCount)
+      gaEventTracker(`fallo ${passwordFailCount}`);
       if (passwordFailCount > 0) {
         if (passwordFailCount === 1) {
           setpasswordError("No puedo creer que hayas fallado");
@@ -22,10 +23,9 @@ export default function Auth() {
         }
       }
     } else {
+      gaEventTracker(`paso despues de ${passwordFailCount}`);
       setpasswordError('');
       setpasswordFailCount(0);
-
-      console.log('Dijo el que era')
       window.open('https://rankey1496.github.io/mariabirthday/')
     }
   };

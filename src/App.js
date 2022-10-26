@@ -1,11 +1,17 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
 import Login from './pages/Login';
-import NotFound from './pages/NotFound';
+import ReactGA from 'react-ga';
+import React, { useEffect } from 'react';
+
+ReactGA.initialize('UA-91368724-2');
 
 function App() {
+  useEffect(() => {
+    document.title = 'Hola baby';
+  });
+
   return (
     <div className='wrapper'>
       <Router>
