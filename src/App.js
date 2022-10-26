@@ -5,7 +5,9 @@ import Login from './pages/Login';
 import ReactGA from 'react-ga';
 import React, { useEffect } from 'react';
 
-ReactGA.initialize('UA-91368724-2');
+ReactGA.initialize('UA-91368724-2', {
+  debug: true,
+});
 
 function App() {
   useEffect(() => {
